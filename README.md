@@ -17,20 +17,24 @@ The questions that this research aims to answer are:
 
 * What type of analyses will be performed to answer these questions? And in which order? 
 
-Using the original Metadata, the analysis workflow will be similar to that defined by the researchers, however, there will be alternative tools used to keep the analysis in line with the concepts of the course. 
+Using the original Metadata, the analysis workflow will be similar to that defined by the researchers, however, there will be alternative tools used to keep the analysis in line with the concepts of the course. Steps will roughly follow this workflow:
 
+1. Preprocessing 
+2. Assembly
+3. 
+4. Annotation
 ### Software
-* Software used:
 
-In the paper, the main analyses tools used were:
+Analysis tools used by Zhang et al.:
 
 * Assembly:
   * Celera
   * MaSurca
 
 * Annotation  
-  * tbd
-  * tbd
+  * Prokka
+  
+
 
 * What may cause time limitations? If there are time limitations, which analyses will require longer times?
 
