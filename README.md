@@ -25,16 +25,12 @@ Using the original Metadata, the analysis workflow will be similar to that defin
 In the paper, the main analyses tools used were:
 
 * Assembly:
-  
-  ** Celera
-  
-  ** MaSurca
-  
-* Annotation
-  
-  ** tbd
-  
-  ** tbd
+  * Celera
+  * MaSurca
+
+* Annotation  
+  * tbd
+  * tbd
 
 * What may cause time limitations? If there are time limitations, which analyses will require longer times?
 
