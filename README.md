@@ -34,7 +34,10 @@ Analysis tools used by Zhang et al.:
 * Annotation  
   * Prokka
   
-
+My analysis tools:
+* Assembly:
+  * Canu
+  * Spades
 
 * What may cause time limitations? If there are time limitations, which analyses will require longer times?
 
