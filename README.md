@@ -29,21 +29,24 @@ Using the original Metadata, the analysis workflow will be similar to that defin
 #### Software
 
 Analysis tools used by Zhang et al.:
- * Preprocessing:
-   * Pilon
+1. Preprocessing:
+  * Pilon
 
- * Assembly:
-   * Celera (for long reads)
-   * SPAdes(long and short reads)
+2. Assembly:
+  * Celera (for long reads)
+  * SPAdes(long and short reads)
   
- * Alignment:
-   * bwa(-M)
+3. Alignment:
+  * bwa(-M)
 
- * Annotation  
-   * Prokka
+4. Annotation  
+  * Prokka
   
- * Expression analysis
-  
+5. Expression analysis
+
+6. Synteny/Phylogeny analysis
+  * MEGA
+  * ParSNP
 My analysis tools:
  * Assembly:
    * Canu
