@@ -32,21 +32,22 @@ Analysis tools used by Zhang et al.:
 1. Preprocessing:
   * Pilon
 
-2. Assembly:
+* Assembly:
   * Celera (for long reads)
   * SPAdes(long and short reads)
   
-3. Alignment:
+* Alignment:
   * bwa(-M)
 
-4. Annotation  
+* Annotation  
   * Prokka
   
-5. Expression analysis
+* Expression analysis
 
-6. Synteny/Phylogeny analysis
+* Synteny/Phylogeny analysis
   * MEGA
   * ParSNP
+
 My analysis tools:
  * Assembly:
    * Canu
@@ -66,7 +67,9 @@ My analysis tools:
    * Prokka
   
  * Expression analysis
+   * DEseq
+   * HTseq
 
 * What may cause time limitations? If there are time limitations, which analyses will require longer times?
 
- Depending on the access to external server memory and ...
+Depending on the access to external server memory and ...
