@@ -29,40 +29,40 @@ Using the original Metadata, the analysis workflow will be similar to that defin
 #### Software
 
 Analysis tools used by Zhang et al.:
-* Preprocessing:
-  * Pilon
+ * Preprocessing:
+   * Pilon
 
-* Assembly:
-  * Celera (for long reads)
-  * SPAdes(long and short reads)
+ * Assembly:
+   * Celera (for long reads)
+   * SPAdes(long and short reads)
   
-* Alignment:
-  * bwa(-M)
+ * Alignment:
+   * bwa(-M)
 
-* Annotation  
-  * Prokka
+ * Annotation  
+   * Prokka
   
-* Expression analysis
+ * Expression analysis
   
 My analysis tools:
-* Assembly:
-  * Canu
-  * Spades
+ * Assembly:
+   * Canu
+   * Spades
 
-* Preprocessing:
-  * trimmomatic
+ * Preprocessing:
+   * trimmomatic
   
-* Assembly:
-  * Canu (for long reads)
-  * SPAdes(long and short reads)
+ * Assembly:
+   * Canu (for long reads)
+   * SPAdes(long and short reads)
   
-* Alignment:
-  * bwa(-M)
+ * Alignment:
+   * bwa(-M)
 
-* Annotation  
-  * Prokka
+ * Annotation  
+   * Prokka
   
-* Expression analysis
+ * Expression analysis
 
 * What may cause time limitations? If there are time limitations, which analyses will require longer times?
 
