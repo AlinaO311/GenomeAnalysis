@@ -6,7 +6,7 @@ Repository for materials for Genome Analysis Course 1MB462(Spring2019)
 ### Purpose
 * What is the goal of this project? What question(s) is this research answering?
 
-The goal of this project is to verify and try to recreate the research carried out by Zhang et al. BMC Genomics in the paper *RNA-seq and Tn-seq reveal fitness determinants of vancomycin-resistant Enterococcus faecium during growth in human serum*.
+The goal of this project is to verify and try to recreate the research carried out by Zhang et al. BMC Genomics in the paper *RNA-seq and Tn-seq reveal fitness determinants of vancomycin-resistant Enterococcus faecium during growth in human serum* https://www.ncbi.nlm.nih.gov/pubmed/29162049.
 
 The questions that this research aims to answer are:
 1. Which genes contribute to the growth of E. faecium in human serum?
@@ -26,7 +26,7 @@ Using the original Metadata, the analysis workflow will be similar to that defin
 5. Annotation
 6. Synteny/Phylogeny analysis
 
-### Software
+#### Software
 
 Analysis tools used by Zhang et al.:
 * Preprocessing:
