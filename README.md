@@ -70,6 +70,18 @@ My analysis tools:
    * DEseq
    * HTseq
 
+#### Timeline
+
 * What may cause time limitations? If there are time limitations, which analyses will require longer times?
 
 Depending on the access to external server memory and ...
+
+* What is the time frame for your project? Can you define some time checkpoints for when you should have finished certain analyses? When do you need to have finished running all the softwares so you can start to analyze the data?
+
+#### Data 
+* What types of data will be used? How much space is needed to store those data? 
+
+The Data comes from the NCBI Sequence Read Archive (SRA), a repository of next-generation sequencing data. To avoid exceeding space allocation, some of the read files were pre-trimmed or subsampled. The files are named according to their SRA accession, which can also be found in the paper. 
+
+* How will you organize your data? 
+
