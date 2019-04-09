@@ -29,8 +29,6 @@ Using the original Metadata, the analysis workflow will be similar to that defin
 #### Software
 
 Analysis tools used by Zhang et al.:
-1. Preprocessing:
-  * Pilon
 
 * Assembly:
   * Celera (for long reads)
@@ -49,12 +47,15 @@ Analysis tools used by Zhang et al.:
   * ParSNP
 
 My analysis tools:
+
  * Assembly:
    * Canu
    * Spades
 
  * Preprocessing:
    * trimmomatic
+   * FastQC
+   * Pilon
   
  * Assembly:
    * Canu (for long reads)
