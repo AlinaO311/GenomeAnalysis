@@ -12,3 +12,4 @@ Then assembled Illumina+Nanopore reads in Spades
 3. Canu quickstart: https://canu.readthedocs.io/en/latest/quick-start.html#quickstart
 4. Spades manual: http://cab.spbu.ru/files/release3.12.0/manual.html
 5. Quality checking fastqc: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+6. https://biology.stackexchange.com/questions/69560/how-to-pipe-bwa-mem-output-without-saving-sam-file
