@@ -86,3 +86,30 @@ The Data comes from the NCBI Sequence Read Archive (SRA), a repository of next-g
 
 * How will you organize your data? 
 
+###########
+Weekly log:
+
+* 1Apr-7Apr, 2019:
+  * Thurs(4Apr):
+    * downloaded & organized data
+    * canu assembly
+    * project planning
+  * Fri(5Apr):
+    * quality check for assembly
+    * project planning
+    * RNA trimmming & QC
+* 8Apr-13Apr,2019:
+  * Mon(8Apr)
+     * RNA trimming & QC
+  * Tues(9Apr)
+     * BWA alignment
+     * SAMtools-coverage, base call & assembly errors
+  * Wed(10Apr)
+     * SPAdes assembly
+     * blastn of contigs
+     * annotate with Prokka
+  * Thurs(11Apr)
+     * generate tree with ParSNP
+     * visualize with MEGA
+     * ResFinder for identifying antibiotic resistant genes
+  * Friday(12Apr)
