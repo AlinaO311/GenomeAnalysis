@@ -10,3 +10,8 @@ For determining the quality of bwa alignment(canu assembly to illumina reads):
 samtools flagstat output.bam
 
 https://www.biostars.org/p/84396/
+
+### possible editing nanopore
+
+https://gigabaseorgigabyte.wordpress.com/2017/06/05/trimming-and-filtering-oxford-nanopore-sequencing-reads/
+https://academic.oup.com/bioinformatics/article/35/3/523/5057155
