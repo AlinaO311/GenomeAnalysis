@@ -6,4 +6,7 @@
 4. https://github.com/jonbra/NGS-Abel/wiki/Quality-check-and-trimming
 
 For determining the quality of bwa alignment(canu assembly to illumina reads):
+
 samtools flagstat output.bam
+
+https://www.biostars.org/p/84396/
