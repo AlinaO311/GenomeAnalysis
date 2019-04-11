@@ -12,3 +12,16 @@ Then assembled Illumina+Nanopore reads in Spades
 3. Canu quickstart: https://canu.readthedocs.io/en/latest/quick-start.html#quickstart
 4. Spades manual: http://cab.spbu.ru/files/release3.12.0/manual.html
 5. Quality checking fastqc: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+6. https://biology.stackexchange.com/questions/69560/how-to-pipe-bwa-mem-output-without-saving-sam-file
+
+plot coverage and depth statistics of a bam file: https://www.biostars.org/p/104063/
+
+extract all the mapped reads from bwa output: https://www.biostars.org/p/127992/
+
+ Filter Mapped Reads With Samtools https://www.biostars.org/p/56246/
+
+PacBio FASTQ reads to polish\correct a PacBio Fasta assembly without Quiver: https://www.biostars.org/p/258209/
+
+Tools To Calculate Average Coverage For A Bam File?: https://www.biostars.org/p/5165/
+
+Reads Per Contig From Sam File?: https://www.biostars.org/p/14246/
