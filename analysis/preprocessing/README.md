@@ -15,3 +15,6 @@ https://www.biostars.org/p/84396/
 
 https://gigabaseorgigabyte.wordpress.com/2017/06/05/trimming-and-filtering-oxford-nanopore-sequencing-reads/
 https://academic.oup.com/bioinformatics/article/35/3/523/5057155
+
+
+cat canu_contig_1.fasta | awk -v RS=">" '{print $0 > "temp" NR }'
