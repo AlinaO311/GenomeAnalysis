@@ -4,14 +4,14 @@
 #SBATCH -p core
 #SBATCH -n 2
 #SBATCH -t 05:00:00
-#SBATCH -J rna_fastqc
+#SBATCH -J rna_fastqc_after_trim
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user alina.orozco12@gmail.com
 
 module load bioinfo-tools
 module load FastQC
 
-for i in ~/Paper1_raw_data/transcriptomics_data/RNA-Seq_Serum/untrimmed/*.fastq.gz
+for i in ~/analysis/transcriptome/preproccessing/trimmming/*.fq
 do 
 	fastqc -o ~/analysis/transcriptome/preproccessing/FASTQC/ $i
 done
