@@ -1,3 +1,6 @@
+Trimmed untrimmed transcriptome files using FastQC for quality assessment. Used default trimming parameters and quality improved.
+
+
 ## References
 
 1. Fastqc: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
