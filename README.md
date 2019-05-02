@@ -113,3 +113,5 @@ Weekly log:
      * visualize with MEGA
      * ResFinder for identifying antibiotic resistant genes
   * Friday(12Apr)
+
+Synteny by blasting closest related relative from paper in ncbi against corrected pilon2.fasta(or can blast corrected & find closest relative?)
