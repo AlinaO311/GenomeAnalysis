@@ -2,8 +2,8 @@
 #SBATCH -A g2019003
 #SBATCH -p core
 #SBATCH -n 2
-#SBATCH -t 04:00:00
-#SBATCH -J canu_rna_alignment
+#SBATCH -t 05:00:00
+#SBATCH -J pilon_bh_aln
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user alina.orozco12@gmail.com
 
@@ -11,19 +11,24 @@ module load bioinfo-tools
 module load bwa
 module load samtools
 
-bwa index -p canu_rna_aln canu_tig00000001.fasta 
+bwa index -p rna_bh_map /home/alina0/analysis/transcriptome/alignment/BH/pilon2.fasta
+bwa mem -M rna_bh_map trim_paired_ERR1797972_pass_1.fastq.gz trim_paired_ERR1797972_pass_2.fastq.gz | samtools sort -o rna_bh_map72.bam
 
-total_files=`find -name '*.fastq' | wc -l`
-arr=( $(ls *.fastq.gz) )
-echo "mapping started" >> map.log
-echo "---------------" >> map.log
+module load bioinfo-tools
+module load bwa
+module load samtools
 
-for ((i=0; i<$total_files; i+=2))
-{
-sample_name=`echo ${arr[$i]} | awk -F "_" '{print $1}'`
-echo "[mapping running for] $sample_name"
-printf "\n"
-echo "bwa mem -t 12 canu_tig00000001.fasta ${arr[$i]} ${arr[$i+1]} > $sample_name.sam" >> map.log
-bwa mem -t 12 canu_tig00000001.fasta ${arr[$i]} ${arr[$i+1]} > $sample_name.sam
-} 
+bwa index -p rna_bh_map /home/alina0/analysis/transcriptome/alignment/BH/pilon2.fasta
+bwa mem -M rna_bh_map trim_paired_ERR1797973_pass_1.fastq.gz trim_paired_ERR1797973_pass_2.fastq.gz | samtools sort -o rna_bh_map73.bam
+
+module load bioinfo-tools
+module load bwa
+module load samtools
+
+bwa index -p rna_bh_map /home/alina0/analysis/transcriptome/alignment/BH/pilon2.fasta
+bwa mem -M rna_bh_map trim_paired_ERR1797974_pass_1.fastq.gz trim_paired_ERR1797974_pass_2.fastq.gz | samtools sort -o rna_bh_map74.bam
+
+
+
+
 
