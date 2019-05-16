@@ -11,22 +11,22 @@ module load bioinfo-tools
 module load bwa
 module load samtools
 
-bwa index -p rna_bh_map /home/alina0/analysis/transcriptome/alignment/BH/pilon2.fasta
-bwa mem -M rna_bh_map trim_paired_ERR1797969_pass_1.fastq.gz trim_paired_ERR1797969_pass_2.fastq.gz | samtools sort -o rna_bh_map69.bam
+bwa index -p rna_serum_map /home/alina0/analysis/transcriptome/alignment/BH/pilon2.fasta
+bwa mem -M rna_serum_map trim_paired_ERR1797969_pass_1.fastq.gz trim_paired_ERR1797969_pass_2.fastq.gz | samtools sort -o rna_serum_map69.bam
 
 module load bioinfo-tools
 module load bwa
 module load samtools
 
-bwa index -p rna_bh_map /home/alina0/analysis/transcriptome/alignment/BH/pilon2.fasta
-bwa mem -M rna_bh_map trim_paired_ERR1797970_pass_1.fastq.gz trim_paired_ERR1797970_pass_2.fastq.gz | samtools sort -o rna_bh_map70.bam
+bwa index -p rna_serum_map /home/alina0/analysis/transcriptome/alignment/BH/pilon2.fasta
+bwa mem -M rna_serum_map trim_paired_ERR1797970_pass_1.fastq.gz trim_paired_ERR1797970_pass_2.fastq.gz | samtools sort -o rna_serum_map70.bam
 
 module load bioinfo-tools
 module load bwa
 module load samtools
 
-bwa index -p rna_bh_map /home/alina0/analysis/transcriptome/alignment/BH/pilon2.fasta
-bwa mem -M rna_bh_map trim_paired_ERR1797971_pass_1.fastq.gz trim_paired_ERR1797971_pass_2.fastq.gz | samtools sort -o rna_bh_map71.bam
+bwa index -p rna_serum_map /home/alina0/analysis/transcriptome/alignment/BH/pilon2.fasta
+bwa mem -M rna_serum_map trim_paired_ERR1797971_pass_1.fastq.gz trim_paired_ERR1797971_pass_2.fastq.gz | samtools sort -o rna_serum_map71.bam
 
 
 
