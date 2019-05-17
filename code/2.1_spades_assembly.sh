@@ -6,7 +6,7 @@
 #SBATCH -t 03:00:00
 #SBATCH -J spades_assembly
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user alina.orozco12@gmail.com
+#SBATCH --mail-user email
 
 module load bioinfo-tools
 module load spades
