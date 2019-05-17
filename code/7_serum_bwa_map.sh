@@ -5,7 +5,7 @@
 #SBATCH -t 05:00:00
 #SBATCH -J pilon_serum_aln
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user alina.orozco12@gmail.com
+#SBATCH --mail-user email
 
 module load bioinfo-tools
 module load bwa
