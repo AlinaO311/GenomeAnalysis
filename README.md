@@ -13,7 +13,7 @@ The questions that this research aims to answer are:
 
 2. What genes may serve as targets for the development of novel anti-infectives for the treatment of E. faecium bloodstream infections?
 
-### Analysis Pipeline
+## Methods
 
 * What type of analyses will be performed to answer these questions? And in which order? 
 
@@ -22,11 +22,11 @@ Using the original Metadata, the analysis workflow will be similar to that defin
 1. Preprocessing 
 2. Assembly
 3. Alignment
-4. Expression analysis 
-5. Annotation
-6. Synteny/Phylogeny analysis
+4. Annotation
+5. Synteny/Phylogeny analysis
+6. Expression analysis
 
-#### Software
+### Software
 
 Analysis tools used by Zhang et al.:
 
@@ -46,13 +46,9 @@ Analysis tools used by Zhang et al.:
   * MEGA
   * ParSNP
 
-My analysis tools:
+Tools used here:
 
- * Assembly:
-   * Canu
-   * Spades
-
- * Preprocessing:
+ * Preprocessing/Assembly correction:
    * trimmomatic
    * FastQC
    * Pilon
@@ -70,21 +66,32 @@ My analysis tools:
  * Expression analysis
    * DEseq
    * HTseq
+   
+  * Synteny/Phylogeny analysis
+   * Artemis/ACT
 
-#### Timeline
+### Timeline
 
 * What may cause time limitations? If there are time limitations, which analyses will require longer times?
 
-Depending on the access to external server memory and ...
+Depending on the access to external server memory, there could be limitations for running some software on larger data sets. Some 
+of the software that are likely to take the most time and memory are Spades,BWA/Bowtie and HTseq.
 
 * What is the time frame for your project? Can you define some time checkpoints for when you should have finished certain analyses? When do you need to have finished running all the softwares so you can start to analyze the data?
 
-#### Data 
+The time frame for this project is 7 weeks, the time frame for this analysis is as follows:
+
+
+All software analysis should be complete by week 5 to allow data analysis.
+
+### Data 
 * What types of data will be used? How much space is needed to store those data? 
 
 The Data comes from the NCBI Sequence Read Archive (SRA), a repository of next-generation sequencing data. To avoid exceeding space allocation, some of the read files were pre-trimmed or subsampled. The files are named according to their SRA accession, which can also be found in the paper. 
 
 * How will you organize your data? 
+
+Data is organized in 
 
 ###########
 Weekly log:
@@ -113,5 +120,3 @@ Weekly log:
      * visualize with MEGA
      * ResFinder for identifying antibiotic resistant genes
   * Friday(12Apr)
-
-Synteny by blasting closest related relative from paper in ncbi against corrected pilon2.fasta(or can blast corrected & find closest relative?)
