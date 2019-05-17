@@ -5,7 +5,7 @@
 #SBATCH -t 02:00:00
 #SBATCH -J canu_illumina_alignment
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user alina.orozco12@gmail.com
+#SBATCH --mail-user
 
 module load bioinfo-tools
 module load bwa
