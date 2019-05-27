@@ -1,6 +1,5 @@
 Trimmed untrimmed transcriptome files using FastQC for quality assessment. Used default trimming parameters and quality improved.
 
-![RNAseq raw read quality](https://github.com/AlinaO311/GenomeAnalysis/blob/master/analysis/preprocessing/ERR1797969_pass_2(1).png)
 
 
 ## References
