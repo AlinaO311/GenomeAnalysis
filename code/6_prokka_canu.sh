@@ -10,4 +10,4 @@
 module load bioinfo-tools
 module load prokka
 
-prokka --outdir ~/analysis/genome/annotation/ --prefix canu_E745 canu.contigs.fasta
+prokka --outdir ~/analysis/genome/annotation/ --prefix E475_corrected_annotation pilon2.fasta
