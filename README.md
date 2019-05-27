@@ -53,7 +53,8 @@ Analysis tools used by Zhang et al.:
 | Contig Assembly  |  Canu |   |  
 | Assembly quality check  | Quast  |   |
 | Read-assembly alignment   | BWA  |   |  
-| Annotation   | Prokka  |   |  
+| Alignment Correction  | Pilon  |   |  
+| Annotation of corrected assembly  | Prokka  |   |  
 | Orthlogy between assembly and close relative   | BLAST  |   |  
 | Synteny   | ACT/Artemis  |   |  
 | Differential read counts   | HTseq  |   | 
