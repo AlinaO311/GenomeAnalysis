@@ -1,7 +1,9 @@
 # GenomeAnalysis
 Repository for materials for Genome Analysis Course 1MB462(Spring2019)
 
-## Project Plan
+## GitHub wiki
+
+https://github.com/AlinaO311/GenomeAnalysis/wiki
 
 ### Purpose
 * What is the goal of this project? What question(s) is this research answering?
