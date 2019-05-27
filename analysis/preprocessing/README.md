@@ -1,5 +1,7 @@
 Trimmed untrimmed transcriptome files using FastQC for quality assessment. Used default trimming parameters and quality improved.
 
+![](Dragster.jpg)
+
 
 ## References
 
