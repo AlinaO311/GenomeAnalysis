@@ -3,18 +3,7 @@ Repository for materials for Genome Analysis Course 1MB462(Spring2019)
 
 ## GitHub wiki
 
-https://github.com/AlinaO311/GenomeAnalysis/wiki
-
-### Purpose
-* What is the goal of this project? What question(s) is this research answering?
-
-The goal of this project is to verify and try to recreate the research carried out by Zhang et al. BMC Genomics in the paper *RNA-seq and Tn-seq reveal fitness determinants of vancomycin-resistant Enterococcus faecium during growth in human serum* https://www.ncbi.nlm.nih.gov/pubmed/29162049.
-
-The questions that this research aims to answer are:
-1. Which genes contribute to the growth of E. faecium in human serum?
-
-2. What genes may serve as targets for the development of novel anti-infectives for the treatment of E. faecium bloodstream infections?
-
+For full project information, please visit the [![Wiki](https://github.com/AlinaO311/GenomeAnalysis/wiki)](https://github.com/AlinaO311/GenomeAnalysis/wiki)
 
   * Tues(9Apr)
      * BWA alignment
