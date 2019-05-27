@@ -69,6 +69,20 @@ Tools used here:
    
   * Synteny/Phylogeny analysis
    * Artemis/ACT
+| Analysis  | Software  | Time  | 
+|---|---|---|---|---|
+| RNAseq Quality Check  |  FastQC |   |  
+| Trimming  | Trimmomatic  |   |   |   |
+| Contig & Scaffold Assembly  |  Spades |   |   
+| Contig Assembly  |  Canu |   |  
+| Assembly quality check  | Quast  |   |
+| Read-assembly alignment   | BWA  |   |  
+| Annotation   | Prokka  |   |  
+| Orthlogy between assembly and close relative   | BLAST  |   |  
+| Synteny   | ACT/Artemis  |   |  
+| Differential read counts   | HTseq  |   | 
+| Differential Expression Analysis   | DESeq  |   |  
+
 
 ### Timeline
 
@@ -93,21 +107,6 @@ The Data comes from the NCBI Sequence Read Archive (SRA), a repository of next-g
 
 Data is organized in 
 
-###########
-Weekly log:
-
-* 1Apr-7Apr, 2019:
-  * Thurs(4Apr):
-    * downloaded & organized data
-    * canu assembly
-    * project planning
-  * Fri(5Apr):
-    * quality check for assembly
-    * project planning
-    * RNA trimmming & QC
-* 8Apr-13Apr,2019:
-  * Mon(8Apr)
-     * RNA trimming & QC
   * Tues(9Apr)
      * BWA alignment
      * SAMtools-coverage, base call & assembly errors
@@ -119,4 +118,3 @@ Weekly log:
      * generate tree with ParSNP
      * visualize with MEGA
      * ResFinder for identifying antibiotic resistant genes
-  * Friday(12Apr)
