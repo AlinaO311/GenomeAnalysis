@@ -73,7 +73,6 @@ of the software that are likely to take the most time and memory are Spades,BWA/
 
 The time frame for this project is 7 weeks, the time frame for this analysis is as follows:
 
-
 All software analysis should be complete by week 5 to allow data analysis.
 
 ### Data 
