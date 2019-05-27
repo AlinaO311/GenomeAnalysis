@@ -46,29 +46,7 @@ Analysis tools used by Zhang et al.:
   * MEGA
   * ParSNP
 
-Tools used here:
-
- * Preprocessing/Assembly correction:
-   * trimmomatic
-   * FastQC
-   * Pilon
   
- * Assembly:
-   * Canu (for long reads)
-   * SPAdes(long and short reads)
-  
- * Alignment:
-   * bwa(-M)
-
- * Annotation  
-   * Prokka
-  
- * Expression analysis
-   * DEseq
-   * HTseq
-   
-  * Synteny/Phylogeny analysis
-   * Artemis/ACT
 | Analysis  | Software  | Time  | 
 |---|---|---|---|---|
 | RNAseq Quality Check  |  FastQC |   |  
