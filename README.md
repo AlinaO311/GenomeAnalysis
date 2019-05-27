@@ -48,9 +48,9 @@ Analysis tools used by Zhang et al.:
 
   
 | Analysis  | Software  | Time  | 
-|---|---|---|---|---|
+|---|---|---|
 | RNAseq Quality Check  |  FastQC |   |  
-| Trimming  | Trimmomatic  |   |   |   |
+| Trimming  | Trimmomatic  |   |  
 | Contig & Scaffold Assembly  |  Spades |   |   
 | Contig Assembly  |  Canu |   |  
 | Assembly quality check  | Quast  |   |
