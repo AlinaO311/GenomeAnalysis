@@ -39,8 +39,6 @@ Analysis tools used by Zhang et al.:
 
 * Annotation  
   * Prokka
-  
-* Expression analysis
 
 * Synteny/Phylogeny analysis
   * MEGA
