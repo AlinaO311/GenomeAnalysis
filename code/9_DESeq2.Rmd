@@ -14,8 +14,6 @@ library("plyr")
 library("pheatmap")
 library("RColorBrewer")
 
-## Method 1Tot
-
 directory <- "~/Downloads/HTseq"
 sampleFiles<-c('rna_bh_72_counts.txt', 'rna_bh_73_counts.txt', 'rna_bh_74_counts.txt', 'rna_serum_69_counts.txt', 'rna_serum_70_counts.txt', 'rna_serum_71_counts.txt')
 sampleCondition<- c('BH', 'BH', 'BH', 'Serum', 'Serum', 'Serum')
@@ -28,34 +26,40 @@ sampleTable <- data.frame(sampleName = sampleFiles,
 dds <- DESeqDataSetFromHTSeqCount(sampleTable = sampleTable,
                                        directory = directory,
                                        design= ~ condition)
+# Differential Expression analysis
+dds <- DESeq(dds)
 
-
+# Pre-filter
 keep <- rowSums(counts(dds)) >= 10
 dds <- dds[keep,]
 
+# Setting condition level to the control
 dds$condition <- relevel(dds$condition, ref = "BH")
-
-dds <- DESeq(dds)
 res <- results(dds)
-res01 <- results(dds, alpha=0.1)
+
+# Collecting genes withadjusted p value cutoff alpha set to .05:
+res01 <- results(dds, alpha=0.05)
+#summary(res01)
+
 res <- results(dds, name=resultsNames(dds)[2])
 
+# Log fold change shrinkage for visualization and ranking
 resLFC <- lfcShrink(dds, coef="condition_Serum_vs_BH", type="apeglm")
 resOrdered <- res[order(res$pvalue),]
 
 ## Filtering
 filterL2FCG2L05 <- (abs(resOrdered$log2FoldChange) > 2) | (abs(resOrdered$log2FoldChange) < 0.5)
 filtered_res <- resOrdered[filterL2FCG2L05,]
-
 # #How many genes have a padj value smaller than 0.001
 sum(filtered_res$padj < 0.001, na.rm=TRUE)
 
-n = 50
 
-topResults <- rbind( resOrdered[ abs(resOrdered[,'log2FoldChange']) > 2, ][1:n,], 
-                      resOrdered[ abs(resOrdered[,'log2FoldChange']) < 0.5, ][n:1,] )
-topResults[c(1:5,(2*n-4):(2*n)), c('baseMean','log2FoldChange','padj')]
+# Top 200 genes, attempting to sort out hypotheticals
+n = 200
+topResults <- rbind( resOrdered[ abs(resOrdered[,'log2FoldChange']) > 2, ][1:n,])
+topResults[c(60:100), c('baseMean','log2FoldChange','padj')]
 
+## MA plot for normalized DEseq results
 plotMA(results(dds),main = "MA Plot of dds",ylim=c(-4,4))
 
 plotMA(resLFC, ylim=c(-2,2))
@@ -63,6 +67,7 @@ plotMA(resLFC, ylim=c(-2,2))
 resNorm <- lfcShrink(dds, coef=2, type="normal")
 resAsh <- lfcShrink(dds, coef=2, type="ashr")
 
+## MA plots for different shrinkage factors
 par(mfrow=c(1,3), mar=c(4,4,2,1))
 xlim <- c(1,1e5); ylim <- c(-3,3)
 plotMA(resLFC, xlim=xlim, ylim=ylim, main="apeglm")
@@ -79,6 +84,7 @@ head(assay(vsd), 3)
 # this gives log2(n + 1)
 ntd <- normTransform(dds)
 
+## Heat maps for different transformation factors
 library("pheatmap")
 select <- order(rowMeans(counts(dds,normalized=TRUE)),
                 decreasing=TRUE)[1:20]
@@ -92,6 +98,7 @@ pheatmap(assay(vsd)[select,], cluster_rows=FALSE, show_rownames=TRUE,
 pheatmap(assay(rld)[select,], cluster_rows=FALSE, show_rownames=TRUE,
          cluster_cols=FALSE, annotation_col=df)
 
+## PCA plot of condition vs counts
 data <- plotPCA(rld, intgroup=c("condition", "sizeFactor"), returnData=TRUE)
 percentVar <- round(100 * attr(data, "percentVar"))
 
@@ -100,6 +107,18 @@ ggplot(data, aes(PC1, PC2, color=condition)) +
         xlab(paste0("PC1: ",percentVar[1],"% variance")) +
         ylab(paste0("PC2: ",percentVar[2],"% variance")) 
 
+## loading merged counts data for a full heatmap display
+count.table <- read.table(file="~/Downloads/HTseq/merged.tmp", sep="\t", header=FALSE, row.names = 1)
+
+epsilon <- 1 # pseudo-count to avoid problems with log(0)
+hist(as.matrix(log2(count.table + epsilon)), breaks=100, col="blue", border="white",
+     main="Log2-transformed counts per gene", xlab="log2(counts+1)", ylab="Number of genes", 
+     las=1, cex.axis=0.7)
+
+## Heat map of top results
+hmcol <- brewer.pal(11,'RdBu')
+nCounts <- counts(dds, normalized=TRUE)
+heatmap(as.matrix(nCounts[ row.names(topResults), ]), Rowv = NA, col = hmcol, mar = c(10,2))
 ```
 
  
