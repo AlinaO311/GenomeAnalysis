@@ -15,3 +15,5 @@ samtools faidx canu.contigs.fasta
 samtools sort canu_illumina_aln.bam canu_illumina_sorted.bam
 
 samtools index canu_illumina_sorted.bam
+
+samtools mpileup -I -u -f canu.contigs.fasta canu_illumina_aln_sorted.bam > variant.bcf
